@@ -19,3 +19,9 @@
   files: \.(c|cc|cxx|cpp|h|hpp|hxx)$
   entry: cppcheck --error-exitcode=1
   args: ["--enable=warning"]
+- id: flawfinder
+  name: flawfinder
+  description: a static analysis tool for finding vulnerabilities in C/C++ source code
+  language: python
+  files: \.(c|cc|cxx|cpp)$
+  entry: flawfinder
